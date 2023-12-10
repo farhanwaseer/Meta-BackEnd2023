@@ -134,3 +134,11 @@ name.insert(2,"karachi")
 name.extend(thislist)
 
 print(name)
+
+thislist.extend(name)
+thislist.remove("apple")
+thislist.pop(2)
+del thislist[4]
+del name
+
+print(thislist)
