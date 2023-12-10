@@ -127,3 +127,10 @@ print(thislist)
 
 name = ["farhan", "ahmed", "waseer"]
 name.clear()
+
+
+name.append("sukkur")
+name.insert(2,"karachi")
+name.extend(thislist)
+
+print(name)
