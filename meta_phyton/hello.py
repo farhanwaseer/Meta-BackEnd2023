@@ -143,7 +143,7 @@ del name
 
 print(thislist)
 
-/////////////////////
+#/////////////////////
 thislist = ["apple", "banana", "cherry"]
 
 for x in thislist:
