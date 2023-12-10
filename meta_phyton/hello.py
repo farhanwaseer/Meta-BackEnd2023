@@ -118,4 +118,12 @@ def myMood():
 myMood()    
 
 #///////////////////
-    
+thislist = ["apple", "banana", "cherry"]
+
+thislist.append("orange")
+
+
+print(thislist)
+
+name = ["farhan", "ahmed", "waseer"]
+name.clear()
