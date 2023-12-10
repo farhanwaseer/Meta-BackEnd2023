@@ -142,3 +142,33 @@ del thislist[4]
 del name
 
 print(thislist)
+
+/////////////////////
+thislist = ["apple", "banana", "cherry"]
+
+for x in thislist:
+ print(x)
+ 
+name = ["farhan","ahmed","waseer"]
+for b in name:
+  print(b)
+  
+txtx = """you can also loop through the list items by referring to their index number 
+"""
+
+txtx = txtx.split()
+print(txtx)
+print(len(txtx))
+
+for i in range(len(txtx)):
+  print(txtx[i])
+  
+i = 0 
+
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+print("""?????????????""")
+
+[print(x) for x in thislist]
+
