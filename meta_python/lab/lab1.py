@@ -13,7 +13,9 @@ menu = {
 
 # print("Dic: " ,menu.values())
 
-for items in menu.values():
-    items = items["price"]
 
-    print(items)
+
+
+
+
+
