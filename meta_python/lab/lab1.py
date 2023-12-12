@@ -10,3 +10,10 @@ menu = {
     5: {"name": 'sandwich',
         "price": 4.99}
 }
+
+# print("Dic: " ,menu.values())
+
+for items in menu.values():
+    items = items["price"]
+
+    print(items)
