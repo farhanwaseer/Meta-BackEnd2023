@@ -13,7 +13,7 @@ print("Calculate tex 2 : ",calculate_tex(mybill,texRate))
 ## Marks to percentage 
 
 def calculate_marks(total, obtain):
-    return 
+    return round((obtain * 100 / total),2)
 
 total_marks = int(input("Total Marks : "))
 obtain_marks = int(input("Obtain Marks : "))
