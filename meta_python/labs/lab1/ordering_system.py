@@ -70,6 +70,7 @@ def summarize_order(order):
     """
     print_order(order)
     ### WRITE SOLUTION HERE
+    
 
     raise NotImplementedError()
 
