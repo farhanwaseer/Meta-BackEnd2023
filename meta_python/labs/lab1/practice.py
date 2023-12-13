@@ -13,6 +13,16 @@ menu = {
         "price": 4.99}
 }
 
+### Step 7
+
+def calculate_subtotal(order):
+    print('Calculating bill subtotal...')
+
+ 
+    
+    print(order)
+
+
 # Step 5 
 def print_order(order):
     print('You have ordered ' + str(len(order)) + ' items')
@@ -49,8 +59,8 @@ def main():
     order = take_order()
     print_order(order)
 
-     #subtotal = calculate_subtotal(order)
-    # print("Subtotal for the order is: " + str(subtotal))
+    subtotal = calculate_subtotal(order)
+    print("Subtotal for the order is: " + str(subtotal))
 
 
 # Step 6 
