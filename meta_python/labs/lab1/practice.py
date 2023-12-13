@@ -17,10 +17,15 @@ menu = {
 
 def calculate_subtotal(order):
     print('Calculating bill subtotal...')
-
- 
+    itprices = []
+    itprices = [itemx["price"] for itemx in order]
+    pri_list = list(itprices)
+    pri_list = sum(pri_list)
+    # print(pri_list)
+    # print(type(pri_list)) 
+    return pri_list
     
-    print(order)
+    
 
 
 # Step 5 
