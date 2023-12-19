@@ -23,6 +23,23 @@ except Exception as e:
     print(e, ",Some thing went wrong!")
     
   #  print(e.__class__)
+'''
+def divide_by(a, b):
+    try:
+        return a / b
+    except ZeroDivisionError:
+        return 0
+    except Exception as e:
+        print(e, 'Something went wrong!')
+
+ans = divide_by(10,0)
+print(ans)
+
+'''
+
+
+
+
 
 # Exception Exercise 
 
@@ -34,8 +51,8 @@ try:
     print(item)
 except IndexError as e:
     print(e,", Item does not exist in the list")
-except Exception as ex:
-    print("Item does not exist in the list, ",ex)
+except Exception as e:
+    print("Item does not exist in the list, ",e)
 
   
 
