@@ -24,7 +24,18 @@ except Exception as e:
     
   #  print(e.__class__)
 
+# Exception Exercise 
 
+# Starter Code 
+
+items = [1,2,3,4,5]
+try:
+    item =  items[6]
+    print(item)
+except IndexError as e:
+    print(e,", Item does not exist in the list")
+except Exception as ex:
+    print("Item does not exist in the list, ",ex)
 
   
 
