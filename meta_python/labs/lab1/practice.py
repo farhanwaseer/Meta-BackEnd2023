@@ -13,7 +13,7 @@ menu = {
         "price": 4.99}
 }
 
-### Step 7
+### Step 7 Solution One --->
 
 def calculate_subtotal(order):
     print('Calculating bill subtotal...')
@@ -25,8 +25,35 @@ def calculate_subtotal(order):
     # print(type(pri_list)) 
     return pri_list
     
-    
 
+
+    
+ #-------------------------->
+
+ ### Step 8 Solution Two ---->
+ 
+def calculate_tax(subtotal):
+    print('Calculating tax from subtotal...')
+    
+    sum_tex = round((subtotal * 15) / 100, 2) 
+    
+    return sum_tex
+
+### Step 9
+
+def summarize_order(order):
+    print_order(order)
+    itprices = []
+    itprices = [itemx["price"] for itemx in order]
+    pri_list = list(itprices)
+    pri_list = sum(pri_list)
+    tex = round((pri_list * 15) / 100, 2)
+    total = pri_list + tex
+    
+    names = []
+    names = [item["name"] for item in order]
+
+    return names, total
 
 # Step 5 
 def print_order(order):
@@ -67,8 +94,15 @@ def main():
     subtotal = calculate_subtotal(order)
     print("Subtotal for the order is: " + str(subtotal))
 
+    tax = calculate_tax(subtotal)
+    print("Tax for the order is: " + str(tax))
+
+    subtotal = summarize_order(order)
+
 
 # Step 6 
 
 if __name__ == "__main__":
     main()
+
+
