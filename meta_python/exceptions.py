@@ -36,11 +36,6 @@ ans = divide_by(10,0)
 print(ans)
 
 '''
-
-
-
-
-
 # Exception Exercise 
 
 # Starter Code 
@@ -54,6 +49,15 @@ except IndexError as e:
 except Exception as e:
     print("Item does not exist in the list, ",e)
 
+ # Task 3 : FileNotFoundError
   
+# with open('file_does_not_exist.txt', 'r') as file:
+#      print(file.read())
 
-   
+# Solution 
+
+try:
+    with open('file_does_not_exist.txt','r') as file:
+        print(file.read())
+except:
+    print("Unable to locate file")
