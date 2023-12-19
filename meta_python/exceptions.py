@@ -5,10 +5,14 @@ def divide_by(a , b):
 
 
 try:
-    ans = divide_by(54,3)
+    ans = divide_by(54,0)
     print(ans)
-except:
-    print("Some thing went wrong! ")
+
+except ZeroDivisionError as e:
+    print(e, ",We cannot divide by zero")
+except Exception as e:
+    print(e, ",Some thing went wrong!")
+    print(e.__class__)
 
 
 '''
