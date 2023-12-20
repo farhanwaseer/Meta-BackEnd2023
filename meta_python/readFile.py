@@ -1,9 +1,10 @@
 # Way 3 
-
-with open('test.txt', 'r') as file:
-    data = file.readlines()
-    print(data)
-
+try:
+   with open('text.txt', 'r') as file:
+      data = file.readlines()
+      print(data)
+except FileNotFoundError as e:
+   print(e,"Error")
 
 # Way 2
 
