@@ -63,3 +63,7 @@ w="Balloons float in the air."
 x="Butterflies symbolize transformation."
 y="Snowflakes are unique."
 z="Clouds form interesting shapes."
+
+sents = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+
+for al in range(len(sents)): print(sents[al])
