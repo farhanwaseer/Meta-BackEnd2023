@@ -31,10 +31,6 @@ sentences = [
     "Every day is a new opportunity."
 ]
 
-# Print each sentence
-for sentence in sentences:
-    print(sentence)
-
 ################
 
 a="The sun rises in the east."
@@ -62,8 +58,18 @@ v="Learning is a lifelong journey."
 w="Balloons float in the air."
 x="Butterflies symbolize transformation."
 y="Snowflakes are unique."
-z="Clouds form interesting shapes."
+z="#######################"
 
 sents = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 
 for al in range(len(sents)): print(sents[al])
+
+# Print each sentence
+for sentence in sentences:
+    print(sentence)
+
+######################
+# Short cut way for looping the list 
+
+[print(sent) for sent in sentences]   
+
