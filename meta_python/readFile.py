@@ -1,4 +1,6 @@
-# Way 3 
+# way  4 
+
+
 try:
    with open('text.txt', 'r') as file:
       data = file.readlines()
@@ -6,6 +8,13 @@ try:
 except FileNotFoundError as e:
    print(e,"Error")
 
+# Way 3 
+'''
+with open('text.txt', 'r') as file:
+      data = file.readlines()
+      print(data)
+ 
+'''
 # Way 2
 
 '''
