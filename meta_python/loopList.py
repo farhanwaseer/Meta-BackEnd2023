@@ -72,3 +72,9 @@ for sentence in sentences:
 # Short cut way for looping the list 
 
 [print(sent) for sent in sentences]
+
+### ITRATE LIST WITH WHILE LOOP 
+
+b = 0 
+
+while b < len()
