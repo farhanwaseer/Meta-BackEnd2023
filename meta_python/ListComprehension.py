@@ -60,6 +60,8 @@ for b in sentences:
 
 for nb in newbList:
     print(nb)
+#print(len(newbList), "sentences" )    
+print("{} sentences".format(len(newbList)))
 
 
 
