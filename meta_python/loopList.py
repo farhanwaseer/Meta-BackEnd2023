@@ -79,3 +79,4 @@ b = 0
 
 while b < len(sentences):
     print(sentences[b])
+    b = b + 1
