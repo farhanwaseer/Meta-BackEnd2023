@@ -77,4 +77,5 @@ for sentence in sentences:
 
 b = 0 
 
-while b < len()
+while b < len(sentences):
+    print(sentences[b])
