@@ -7,15 +7,6 @@ Based on a list of fruits, you want a new list, containing only the fruits with 
 
 Without list comprehension you will have to write a for statement with a conditional test inside: """
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-
-newList = [] 
-
-for x in fruits:
-    if "a" in x:
-        newList.append(x)
-
-print(newList)
 
 sentences = [
     "The sun rises in the east.",
@@ -63,5 +54,19 @@ for nb in newbList:
 #print(len(newbList), "sentences" )    
 print("{} sentences".format(len(newbList)))
 
+###################
 
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 
+"""
+newList = [] 
+for x in fruits:
+    if "a" in x:
+        newList.append(x)
+print(newList)
+"""
+### the Short hand way
+newList = [x for x in fruits if "a" in x]
+print(newList)
+
+#  [x for x in fruits if "a" in x]
