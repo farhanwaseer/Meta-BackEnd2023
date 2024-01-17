@@ -71,5 +71,4 @@ for sentence in sentences:
 ######################
 # Short cut way for looping the list 
 
-[print(sent) for sent in sentences]   
-
+[print(sent) for sent in sentences]
