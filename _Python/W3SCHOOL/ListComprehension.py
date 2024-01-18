@@ -70,3 +70,11 @@ newList = [x for x in fruits if "a" in x]
 print(newList)
 
 #  [x for x in fruits if "a" in x]
+
+"""
+# newlist = [x for x in fruits if x != "apple"]
+
+The condition if x != "apple"  will return 
+True for all elements other than "apple", 
+making the new list contain all fruits except "apple".
+"""
