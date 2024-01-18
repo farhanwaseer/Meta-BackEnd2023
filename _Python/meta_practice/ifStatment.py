@@ -2,7 +2,7 @@
 loyalty_customer = True
 total_bill = 105
 # Discunt Counter
-if loyalty_customer and total_bill > 100:
+if loyalty_customer and total_bill > 200:
     #give 20% discount
     total_bill = total_bill - (float(total_bill)/ 100) * 20
 elif total_bill > 100:
