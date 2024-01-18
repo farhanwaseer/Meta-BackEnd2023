@@ -1,4 +1,6 @@
 #//////////////////
+loyalty_customer = True
+total_bill = 105
 # Discunt Counter
 if loyalty_customer and total_bill > 100:
     #give 20% discount
