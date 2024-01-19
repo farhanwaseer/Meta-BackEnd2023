@@ -30,6 +30,13 @@ def tri_recursion(k):
 print("\n\nRecursion Example Results")
 tri_recursion(6)
 
-
+def pri_recursion(l):
+    if(k > 0):
+        result = k + pri_recursion(l - 1)
+        print(result)
+    else:
+        result = 0 
+    return result
+        
 
 
