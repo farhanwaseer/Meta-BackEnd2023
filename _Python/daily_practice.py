@@ -41,3 +41,33 @@ def pri_recursion(l):
 print("\n\nRecursion Example Results ")        
 
 
+"""\\
+class 
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+
+print(p1)
+
+class Cars:
+  def __init__(cls, car, model, price):
+    cls.car = car
+    cls.model = model
+    cls.price = price
+  
+c2 = Cars("toyota", 2004, "12M")
+
+print(c2.car)
+print(c2.model)
+print(c2.price)
+
+
+
+"""
