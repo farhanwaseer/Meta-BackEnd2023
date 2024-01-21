@@ -21,10 +21,27 @@ employee_list = [
     (30879, "Alexander", "Sales"),
 ]
 
-def get_employee():
-    for employee in employee_list:
-        print(employee)
-
+# def get_employee(id):
+#     for employee in employee_list:
+#         if employee[0] == id:
+#            return {"id": employee[0], "name": employee[1], "department": employee[2]}
+        
 # employee_obj = dict(get_employee())
 
-print()       
+# print(get_employee(24689))       
+
+def print_employee_details(employee_id, employee_list):
+    for employee in employee_list:
+        if employee[0] == employee_id:
+            print(f"Employee ID: {employee[0]}")
+            print(f"Name: {employee[1]}")
+            print(f"Department: {employee[2]}")
+            return
+    print(f"No employee found with ID {employee_id}")
+
+
+
+# Print details for employee with ID 12458
+print_employee_details(12458, employee_list)
+print_employee_details(16937, employee_list)
+
