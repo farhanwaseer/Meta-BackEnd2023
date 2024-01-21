@@ -73,4 +73,8 @@ print(c2.price)
 """
 list = ["car","car2","car3","car4"]
 
-print(list)
+# print(list)
+# print(*list)
+
+for x in list:
+    print(x,*list)
