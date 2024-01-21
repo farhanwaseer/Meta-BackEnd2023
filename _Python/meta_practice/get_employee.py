@@ -26,7 +26,6 @@ employee_list = [
 #         if employee[0] == id:
 #            return {"id": employee[0], "name": employee[1], "department": employee[2]}
         
-# employee_obj = dict(get_employee())
 
 # print(get_employee(24689))       
 
