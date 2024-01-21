@@ -12,67 +12,43 @@ menu = {
 }
 
 def calculate_subtotal(order):
-    """ Calculates the subtotal of an order
 
-    [IMPLEMENT ME] 
-        1. Add up the prices of all the items in the order and return the sum
-
-    Args:
-        order: list of dicts that contain an item name and price
-
-    Returns:
-        float = The sum of the prices of the items in the order
-    """
     print('Calculating bill subtotal...')
     ### WRITE SOLUTION HERE
-
+    itprices = []
+    itprices = [itemx["price"] for itemx in order]
     
+    pri_list = list(itprices)
+    pri_list = round(sum(pri_list),2)
 
-
-
-
-    raise NotImplementedError()
-
+    return pri_list
+    
 
 def calculate_tax(subtotal):
-    """ Calculates the tax of an order
-
-    [IMPLEMENT ME] 
-        1. Multiply the subtotal by 15% and return the product rounded to two decimals.
-
-    Args:
-        subtotal: the price to get the tax of
-
-    Returns:
-        float - The tax required of a given subtotal, which is 15% rounded to two decimals.
-    """
+    
     print('Calculating tax from subtotal...')
     ### WRITE SOLUTION HERE
-
-    raise NotImplementedError()
+    sub_tax = round(float((subtotal * 15) / 100), 2)
+    return sub_tax
+    # raise NotImplementedError()
 
 def summarize_order(order):
-    """ Summarizes the order
-
-    [IMPLEMENT ME]
-        1. Calculate the total (subtotal + tax) and store it in a variable named total (rounded to two decimals)
-        2. Store only the names of all the items in the order in a list called names
-        3. Return names and total.
-
-    Args:
-        order: list of dicts that contain an item name and price
-
-    Returns:
-        tuple of names and total. The return statement should look like 
-        
-        return names, total
-
-    """
+    
     print_order(order)
     ### WRITE SOLUTION HERE
+    totalA = calculate_subtotal(order) 
+    print(f'The subtotal for your order is: ${totalA}') 
+    totalB = calculate_tax(totalA)
+    print(f'The total taxed amount is: ${totalB}')
+    total = (totalA + totalB)
     
 
-    raise NotImplementedError()
+    names = []
+    names = [name["name"] for name in order]
+    
+
+    return names, total
+
 
 # This function is provided for you, and will print out the items in an order
 def print_order(order):
@@ -106,16 +82,16 @@ Feel free to change, uncomment, and add these as you wish.
 '''
 def main():
     order = take_order()
-    print_order(order)
+    # print_order(order)
 
-    #subtotal = calculate_subtotal(order)
-    # print("Subtotal for the order is: " + str(subtotal))
+    # subtotal = calculate_subtotal(order)
+    # print("Subtotal for the order is: " + f"$ {str(subtotal)}")
 
     # tax = calculate_tax(subtotal)
     # print("Tax for the order is: " + str(tax))
 
-    # items, subtotal = summarize_order(order)
-
+    items, subtotal = summarize_order(order)
+    print(f'{items} for total of:  ${round(subtotal,2)}')
 
 
 if __name__ == "__main__":
