@@ -20,3 +20,11 @@ employee_list = [
     (29768, "Amelia", "Training"),
     (30879, "Alexander", "Sales"),
 ]
+
+def get_employee():
+    for employee in employee_list:
+        print(employee)
+
+# employee_obj = dict(get_employee())
+
+print()       
