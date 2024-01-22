@@ -81,3 +81,6 @@ print(c2.price)
 
 # for x in list:
 #     print(x,*list)
+
+# for x in list:
+#     print(x,*list)
