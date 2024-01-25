@@ -4,12 +4,22 @@
 
 # print(data)
 
-with open('newfile.txt', 'w') as file:
-    file.write('This is a new file of farhan waseer created!')
+# with open('newfile.txt', 'w') as file:
+#     file.write('This is a new file of farhan waseer created!')
 
 
-file = open('first.txt',  'r')
+# file = open('first.txt',  'r')
 
-data = file.readlines()
+# data = file.readlines()
 
-print(data)
+# print(data)
+
+# file.close()
+
+with open('first.txt', 'r') as file:
+    data = file.readlines()
+    # print(data)
+
+
+for fda in data:
+  print(fda)
