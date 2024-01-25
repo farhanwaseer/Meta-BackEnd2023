@@ -1,5 +1,6 @@
-file = open('test.txt', mode = 'r')
+# file = open('../newtest', mode = 'r')
 
-data = file.readlines()
+# data = file.readlines()
 
-print(data)
+# print(data)
+
