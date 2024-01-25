@@ -16,7 +16,19 @@
 
 # file.close()
 
-with open('first.txt', 'r') as file:
+
+
+try:
+    with open('newtest.txt', 'r') as file:
+        data = file.readlines()
+        print(data)
+except FileNotFoundError as e:
+    print(e, "Error")
+
+with open('newtest.txt',  'a') as file:
+    file.writelines(["\n This is new line for file created 2","\n This is new line 3"])
+
+with open('newtest.txt', 'r') as file:
     data = file.readlines()
     # print(data)
 
