@@ -1,0 +1,4 @@
+
+ This is new line for file created 2
+ This is new line 3, 
+this is line 3 for view
